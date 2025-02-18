@@ -95,12 +95,10 @@ install() {
 
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rf ${PLASMA_THEME}
-  [[ -d ${PLASMA_DIR}/${name} ]] && rm -rf ${PLASMA_DIR}/${name}
   [[ -d ${LOOKFEEL_THEME} ]] && rm -rf ${LOOKFEEL_THEME}
   [[ -f ${SCHEMES_THEME} ]] && rm -rf ${SCHEMES_THEME}
   [[ -d ${KVANTUM_THEME} ]] && rm -rf ${KVANTUM_THEME}
   [[ -d ${WALLPAPER_THEME} ]] && rm -rf ${WALLPAPER_THEME}
-  [[ -d ${WALLPAPER_DIR}/${name}${theme}${color} ]] && rm -rf ${WALLPAPER_DIR}/${name}${theme}${color}
   [[ -d ${WALLPAPER_DIR}/${name}${theme} ]] && rm -rf ${WALLPAPER_DIR}/${name}${theme}
 
   cp -r ${SRC_DIR}/aurorae/${name}${color}{'','-round'}                                      ${AURORAE_DIR}
